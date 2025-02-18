@@ -27,7 +27,7 @@ public:
   void handleProtocol() override;
   
   // Method to send data over all connected WebSocket clients.
-  void sendData(const String& data);
+  void sendData(String& data);
   
   // Expose the WebSocket loop so that events can be processed in loop().
   void loopProtocol();

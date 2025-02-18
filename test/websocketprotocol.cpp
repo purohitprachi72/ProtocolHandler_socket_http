@@ -52,7 +52,7 @@ void WebSocketProtocol::webSocketEvent(uint8_t num, WStype_t type, uint8_t* payl
   }
 }
 
-void WebSocketProtocol::sendData(const String& data)
+void WebSocketProtocol::sendData(String& data)
 {
   // Broadcast the data to all connected WebSocket clients.
   ws.broadcastTXT(data);
