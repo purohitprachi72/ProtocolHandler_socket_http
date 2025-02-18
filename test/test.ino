@@ -1,7 +1,8 @@
 #include "websocketprotocol.h"
 #include "httpprotocol.h"
 
-WebSocketProtocol ws("192.168.1.100", 80, "ssid", "password");
+// WebSocketProtocol ws("192.168.1.100", 80, "ssid", "password");
+WebSocketProtocol sock;
 HttpProtocol hp("192.168.1.100", 80, "ssid", "password");
 
 void setup() {
