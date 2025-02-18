@@ -7,13 +7,10 @@
 class HttpProtocol : public SelectProtocol {
 private:
   HTTPClient http;
-  const char* address;
-  uint16_t port;
-  bool first = false;
-  bool replace = true;
 
 public:
-  HttpProtocol(const char* address, uint16_t port, char* wifi_ssid, char* wifi_password);
+  HttpProtocol(const char* address, uint16_t port, 
+               const char* wifi_ssid, const char* wifi_password);
   void handleProtocol() override;
   void sendData(const String& data);
 };
